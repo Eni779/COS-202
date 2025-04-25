@@ -1,0 +1,26 @@
+class Mammal {
+  breathe() {
+    console.log("Mammals breathe air");
+  }
+}
+
+class Cow extends Mammal {
+  moo() {
+    console.log("Cow moos");
+  }
+}
+
+class Cat extends Mammal {
+  meow() {
+    console.log("Cat meows");
+  }
+}
+
+// Example
+const cow = new Cow();
+cow.breathe(); // From Mammal
+cow.moo();     // From Cow
+
+const cat = new Cat();
+cat.breathe(); // From Mammal
+cat.meow();    // From Cat
