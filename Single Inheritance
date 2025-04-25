@@ -1,0 +1,16 @@
+class Mammal {
+  breathe() {
+    console.log("Mammals breathe air");
+  }
+}
+
+class Dog extends Mammal {
+  bark() {
+    console.log("Dog barks");
+  }
+}
+
+// Example
+const dog = new Dog();
+dog.breathe(); // Inherited from Mammal
+dog.bark();    // Defined in Dog
